@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded JavaScript</title>
+</head>
+<body>
+    <div id="container"></div>
+    <button id="btn">Click Me</button>
+
+    <script>
+        var x = document.getElementById("container");
+        x.style.width="250px";
+        x.style.height="250px";
+        x.style.backgroundColor="red";
+        x.innerHTML="Text added manually";
+
+        var y= document.getElementById("btn");
+        btn.onclick=function()
+        {
+            alert("Power of JAVASCRIPT");
+            x.style.backgroundColor="green";
+        };
+    </script>
+</body>
+</html>
