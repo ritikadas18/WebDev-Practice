@@ -24,10 +24,12 @@
     .mybtn{
         display: flex;
         width: 100%;
+        margin-top: 20vh;
     }
 
 </style>
 <body>
+    <h2 style="text-align: center;">MY BUTTONS</h2>
     <div class="mybtn">
     <div class="btn">
         <button onclick="alert('This is an alert dailog box.')">Click Me1</button>
@@ -72,8 +74,8 @@
             }   
         }
         function heya(){
-            var x = prompt("Enter first number");
-            var y = prompt("Enter second number");
+            var x = parseInt(prompt("Enter first number"));
+            var y = Number(prompt("Enter second number"));
             alert("Sum is: "+(x+y));
         }
     </script>
