@@ -5,8 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    button{
+        display: block;
+        width: 200px;
+        padding: 20px;
+        font-size: 30px;
+        border: none;
+        outline: none;
+        border-radius: 30px;
+        background-color: blueviolet;
+        color: chartreuse;
+        text-decoration: none;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+    .mybtn{
+        display: flex;
+        width: 100%;
+    }
+
+</style>
 <body>
-    <button onclick="alert('This is an alert dailog box.')">Click Me</button>
+    <div class="mybtn">
+    <div class="btn">
+        <button onclick="alert('This is an alert dailog box.')">Click Me1</button>
+    </div>
+    <div class="btn">
+        <button onclick="hello()">Click Me2</button>
+    </div>
+    <div class="btn">
+        <button onclick="hey()">Click Me3</button>
+    </div>
+    <div class="btn">
+        <button onclick="hii()">Click Me4</button>
+    </div>
+    <div class="btn">
+        <button onclick="heya()">Click Me5</button>
+    </div>
+    </div>
 </body>
-    
+    <script>
+        function hello() {
+            var x = 10;
+            var y = 20;
+            alert("Alert box & result="+(x+y));
+        }
+        function hey() {
+            var x = confirm("Confirm box:Do you want to save the result ");
+            if(x){
+                alert("user press ok button");
+            }
+            else{
+                alert("user press cancel button");
+            }
+        }
+        function hii() {
+            var x = prompt("Enter your name");
+            if(x.length>0 && x!="null")
+            {
+                alert("Welcome "+ x);
+            }
+            else{
+                alert("Welcome Anonymous");
+            }   
+        }
+        function heya(){
+            var x = prompt("Enter first number");
+            var y = prompt("Enter second number");
+            alert("Sum is: "+(x+y));
+        }
+    </script>
 </html>
