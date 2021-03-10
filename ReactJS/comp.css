@@ -1,0 +1,12 @@
+
+.box{
+    width: 350px;
+    text-align: justify;
+    line-height:30px;
+    padding: 5 10px;
+    margin:30px;
+}
+
+.app{
+    display:flex;
+}
