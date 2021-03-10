@@ -1,5 +1,5 @@
 //using functional component in our code
-
+//use path of your functional component code while importing
 import FunctionalComponent from "./components/FunctionalComponent";
 import './App.css';
 
