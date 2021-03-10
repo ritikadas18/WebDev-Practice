@@ -3,7 +3,6 @@ import React from "react";
 export default class ReactState extends React.Component {
     constructor(props) {
         super(props);
-
         this.state={
             roll:this.props.roll,
             name:this.props.name,
